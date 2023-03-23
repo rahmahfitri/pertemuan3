@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #kotak1 {
+        width: 50%;
+        /* height: 200px; */
+        background: green;
+        color: wheat;
+        margin-left: 5em;
+        margin-top: 2em;
+        margin-bottom: 4em;
+        margin-right: 2em;
+        /* margin: top; right: ; bottom: ; left: ; */
+        padding: 100px 50px;
+      }
+
+      #kotak2 {
+        height: 150px;
+        width: 150px;
+        background: purple;
+        color: blue;
+        margin: 30px; /*jika 1 nilai untuk ke semua arah*/
+        margin: 60px 90px; /*60 untuk atas dan bawah, 90 untuk kanan dan kiri. tidak boleh double style pilih satu aja*/
+      }
+
+      /* style untuk div class ="kotak" */
+      .kotak {
+        /* border: solid 5px yellowgreen;  penjelasan border sebaris ini ada di style border di bawah ini atau sama dengan stle di bawah*/
+        border-color: pink;
+        border-style: solid;
+        border-width: 5px;
+        background-color: aqua;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      #kotak3 {
+        width: 25%;
+        /* height: 200px; */
+        background: red;
+        color: wheat;
+        margin-left: 5em;
+        margin-top: 2em;
+        margin-bottom: 4em;
+        margin-right: 2em;
+        /* margin: top; right: ; bottom: ; left: ; */
+        padding: 100px 50px;
+        position: fixed;
+        /* ketika pakai position margin arah tidak falid, harus pake arah nya lansung (top, right, bottom, left ) */
+        top: 0;
+      }
+
+      #kotak4 {
+        width: 25%;
+        height: 150px;
+        width: 150px;
+        background: black;
+        color: yellow;
+        margin: 30px; /*jika 1 nilai untuk ke semua arah*/
+        margin: 60px 90px; /*60 untuk atas dan bawah, 90 untuk kanan dan kiri. tidak boleh double style pilih satu aja*/
+        padding: 2em;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kotak1">Konten di Kotak 1</div>
+    <div id="kotak2">Konten di Kotak 2</div>
+
+    <div id="kotak3">Konten di Kotak 3</div>
+    <div id="kotak4">Konten di Kotak 4</div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nam
+        velit illo eos facilis earum blanditiis harum quasi quis! Doloribus
+        expedita iusto officia. Est unde at incidunt. Adipisci, quidem fugit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nam
+        velit illo eos facilis earum blanditiis harum quasi quis! Doloribus
+        expedita iusto officia. Est unde at incidunt. Adipisci, quidem fugit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nam
+        velit illo eos facilis earum blanditiis harum quasi quis! Doloribus
+        expedita iusto officia. Est unde at incidunt. Adipisci, quidem fugit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nam
+        velit illo eos facilis earum blanditiis harum quasi quis! Doloribus
+        expedita iusto officia. Est unde at incidunt. Adipisci, quidem fugit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nam
+        velit illo eos facilis earum blanditiis harum quasi quis! Doloribus
+        expedita iusto officia. Est unde at incidunt. Adipisci, quidem fugit.
+      </p>
+    </div>
+    <div class="kotak">
+      <p>I'm from kotak</p>
+    </div>
+  </body>
+</html>

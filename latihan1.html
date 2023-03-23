@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 1 - Rahmah Fitri</title>
+    <!-- Cara pemanggilan CSS
+    1.Internal CSS : didalam tag head 
+    2. External CSS : di file terpisah, berektensi CSS
+    3. Inline CSS : didalam tag HTML 
+    
+    format
+    selector {
+        property: value;
+        .....
+        property: value;
+        
+    } -->
+
+    <!-- Internal CSS -->
+    <style>
+      /* universal selector dengan menggunakan bintang (*)  */
+      /* *{
+        color: aqua;
+    }  */
+      h1 {
+        color: yellowgreen;
+        background: red;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
+
+    <!-- pemanggilan dilain folder bisa di awali dengan .. -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- /* ini komentar di css */ shortcut komentar css ctrl garis miring-->
+    <style>
+      #kotak1 {
+        width: 50%;
+        height: 50px;
+        background: green;
+        color: wheat;
+      }
+      #kotak2 {
+        height: 150px;
+        width: 150px;
+        background: purple;
+        color: blue;
+      }
+
+      /* style untuk div class ="kotak" */
+      .kotak {
+        /* border: solid 5px yellowgreen;  penjelasan border sebaris ini ada di style border di bawah ini atau sama dengan stle di bawah*/
+        border-color: pink;
+        border-style: solid;
+        border-width: 5px;
+        background-color: aqua;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+
+    } }
+  </head>
+  <body>
+    <h1>Selamat Datang di Pebelajaran CSS</h1>
+
+    <!-- inline CSS -->
+    <h2 style="color: yellow; background-color: red">Hello, WOrld</h2>
+
+    <h1>Welcome lagi..</h1>
+    <h2>Welcome lagi from h2..</h2>
+    <h2>Welcome lagi from h2..</h2>
+    <h2>Welcome lagi from h2..</h2>
+    <h1>Welcome lagi..</h1>
+
+    <!-- jika menumpuk CSS yang menang adalah yang dii inline  -->
+    <p>Pertemuan ke-3</p>
+    <p style="text-align: rigth">Pertemuan Ke-3 dengan style rata kanan</p>
+    <h3>Halo... saya di-styling dari eksternal CSS</h3>
+
+    <!-- selector:
+id = unik, tidak boleh ada tag dengan id yang sama di 1 file html direpresentasi dengan (#)
+class = tidak unik, boleh dipake berkali kali di 1 file html menggunakan di reperesentasi dengan(.) -->
+
+    <div id="kotak1">Konten di Kotak 1</div>
+    <div id="kotak2">Konten di Kotak 2</div>
+
+    <div class="kotak">
+      <p>I'm from kotak</p>
+    </div>
+
+    <div class="artikel">
+      <h1>Hallo saya h1 di dalam class artikel</h1>
+      <h2>Hallo saya h1 di dalam class artikel</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus voluptas
+        exercitationem dolorum earum sunt ab quos officia illum omnis pariatur
+        natus eum laudantium quo, itaque non rerum aspernatur nulla alias!
+      </p>
+
+      <h1>Test...</h1>
+      <div class="artikel-inside">
+        <h1>Test Lagi</h1>
+        <div class="artikel-inside2">
+          <h1>Coba Lagi</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="artikel2">
+      <h1>Hallo saya h1 di dalam class artikel</h1>
+      <h2>Hallo saya h1 di dalam class artikel</h2>
+    </div>
+  </body>
+</html>

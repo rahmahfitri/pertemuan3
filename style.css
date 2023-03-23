@@ -1,0 +1,16 @@
+h3 {
+  font-size: 50px;
+}
+
+.artikel {
+  border: solid 5px black;
+}
+
+/* pilih h1 di dalam class artikel tanpa terkecuali */
+.artikel h1 {
+  color: red;
+  background: blue;
+  font-size: 20px;
+}
+
+/* pilih h1 yang spesifik di dalam claass artikel  */
